@@ -80,7 +80,7 @@ function CustomDrawerContent({
               DOCUMENTATION
             </Text>
           </Block>
-          <DrawerCustomItem title="GETTING STARTED" navigation={navigation} />
+          <DrawerCustomItem title="GETTING STARTED" />
           <DrawerCustomItem title="LOGOUT" navigation={navigation} />
         </ScrollView>
       </Block>
