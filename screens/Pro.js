@@ -22,14 +22,20 @@ class Pro extends React.Component {
         <StatusBar hidden />
         <Block flex center>
           <ImageBackground
-            source={Images.Onboarding}
-            style={{ height, width, zIndex: 1, opacity: 0.25 }}
+            resizeMode="contain"
+            source={Images.Animation}
+            style={{
+              flex: 1,
+              width,
+              zIndex: 1,
+              backgroundColor: nowTheme.COLORS.PRIMARY,
+            }}
           />
         </Block>
 
         <Block flex space="between" style={styles.padded}>
           <Block middle flex space="around" style={{ zIndex: 2 }}>
-            <Block row middle style={{ marginTop: theme.SIZES.BASE * 4 }}>
+            <Block row middle style={{ marginTop: theme.SIZES.BASE * 8 }}>
               <Image
                 source={Images.iOSLogo}
                 style={{

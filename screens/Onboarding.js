@@ -22,22 +22,17 @@ export default class Onboarding extends React.Component {
         <StatusBar barStyle="light-content" />
         <Block flex>
           <ImageBackground
-            source={Images.Onboarding}
-            style={{ flex: 1, height: height, width, zIndex: 1, opacity: 0.3 }}
+            resizeMode="contain"
+            source={Images.Animation}
+            style={{
+              flex: 1,
+              width,
+              zIndex: 1,
+              backgroundColor: nowTheme.COLORS.PRIMARY,
+            }}
           />
           <Block space="between" style={styles.padded}>
             <Block>
-              <Block middle>
-                <Image
-                  source={Images.NowLogo}
-                  style={{
-                    width: 115,
-                    height: 124,
-                    bottom: 200,
-                    position: "absolute",
-                  }}
-                />
-              </Block>
               <Block>
                 <Block middle>
                   <Text
@@ -49,7 +44,7 @@ export default class Onboarding extends React.Component {
                       paddingHorizontal: 20,
                       textAlign: "center",
                     }}
-                    color="white"
+                    color="#333"
                     size={44}
                   >
                     Expo Turtle CLI
@@ -88,7 +83,7 @@ export default class Onboarding extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.COLORS.BLACK,
+    backgroundColor: nowTheme.COLORS.PRIMARY,
     marginTop: Platform.OS === "android" ? -HeaderHeight : 0,
   },
   padded: {
