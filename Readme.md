@@ -42,9 +42,9 @@ Run the following command to test the production build on custom server
 
 ```
 EXPO_ANDROID_KEYSTORE_BASE64="xx-path/to/keystore-xx"
-EXPO_ANDROID_KEYSTORE_ALIAS="xx-keystore-alias-xx"
-EXPO_ANDROID_KEYSTORE_PASSWORD="xx-keystore-password-xx"
-EXPO_ANDROID_KEY_PASSWORD="xx-key/password-xx"
+EXPO_ANDROID_KEYSTORE_ALIAS="expo-turtle-cli"
+EXPO_ANDROID_KEYSTORE_PASSWORD="expo-turtle-cli"
+EXPO_ANDROID_KEY_PASSWORD="expo-turtle-cli"
 
 yarn export
 
