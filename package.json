@@ -8,7 +8,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "export": "expo export --public-url https://develon.github.io/RN-Expo-Turtle-CLI/dist && rm -rf ~/.turtle/workingdir",
+    "export": "expo export --public-url https://develon.github.io/RN-Expo-Turtle-CLI/dist && rm -rf ~/.turtle/workingdir && open https://develon.github.io/RN-Expo-Turtle-CLI/dist/android-index.json",
     "build:apk": "turtle build:android --public-url https://develon.github.io/RN-Expo-Turtle-CLI/dist/android-index.json -t apk -d $(pwd)/build/android/",
     "build:aab": "turtle build:android --public-url https://develon.github.io/RN-Expo-Turtle-CLI/dist/android-index.json -d $(pwd)/build/android/"
   },
