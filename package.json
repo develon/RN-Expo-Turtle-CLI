@@ -1,18 +1,20 @@
 {
-  "name": "now-ui-react-native",
-  "version": "1.4.0",
-  "description": "Now UI React Native, based on Now UI Design System. Coded by Creative Tim",
+  "name": "expo-turtle-cli",
+  "version": "1.0.0",
+  "description": "Expo Turtle CLI project is an experiment to build Expo projects locally",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "lint": "eslint *.js **/*.js"
+    "export": "expo export --public-url https://develon.github.io/RN-Expo-Turtle-CLI/dist && rm -rf ~/.turtle/workingdir",
+    "build:apk": "turtle build:android --public-url https://develon.github.io/RN-Expo-Turtle-CLI/dist/android-index.json -t apk -d $(pwd)/build/android/",
+    "build:aab": "turtle build:android --public-url https://develon.github.io/RN-Expo-Turtle-CLI/dist/android-index.json -d $(pwd)/build/android/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/now-ui-react-native.git"
+    "url": "https://github.com/develon/RN-Expo-Turtle-CLI"
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.10",
@@ -40,27 +42,6 @@
     "babel-eslint": "^10.0.3",
     "babel-preset-expo": "8.3.0"
   },
-  "keywords": [
-    "now react native",
-    "now design system",
-    "now app react native",
-    "now iOS",
-    "react native iOS",
-    "creative tim",
-    "now Android",
-    "react native ui kit",
-    "react native expo",
-    "freebie",
-    "react native now design",
-    "react native galio",
-    "galio now pro",
-    "galio react native free app",
-    "now expo react native",
-    "react native ui template"
-  ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/now-ui-react-native/issues"
-  },
-  "homepage": "https://demos.creative-tim.com/now-ui-react-native"
+  "author": "Santhosh Umapathi",
+  "homepage": "https://develon.github.io/RN-Expo-Turtle-CLI/dist"
 }
