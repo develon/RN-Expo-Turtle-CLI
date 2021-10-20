@@ -1,6 +1,6 @@
 const COLORS = {
   DEFAULT: "#888888",
-  PRIMARY: "#f23",
+  PRIMARY: "#fccc97",
   LABEL: "#FE2472",
   INFO: "#2CA8FF",
   ERROR: "#FF3636",
